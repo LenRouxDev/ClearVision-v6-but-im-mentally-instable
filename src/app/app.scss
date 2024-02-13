@@ -1,14 +1,14 @@
 /* APP */
 %appMount {
-  background: cv('bg.app.overlay');
+  //background: cv('bg.app.overlay');
 }
 %shakeable {
-  background: transparent;
+  //background: transparent;
 }
 %bg {
-  background: cv('bg.app.img') cv('bg.app.pos') / cv('bg.app.size') cv('bg.app.repeat') cv('bg.app.attach');
-  @include filters(cv('bg.app'));
-  z-index: -9999;
+  //background: cv('bg.app.img') cv('bg.app.pos') / cv('bg.app.size') cv('bg.app.repeat') cv('bg.app.attach');
+  //@include filters(cv('bg.app'));
+  //z-index: -9999;
 }
 %appMount {
   %layers,
@@ -18,7 +18,7 @@
 }
 %containerMain {
   %base {
-    border-radius: 0;
+    border-radius: 25;
   }
 }
 %backdrop {
@@ -26,7 +26,7 @@
     content: '';
     position: fixed;
     @include stretch;
-    background: cv('bg.backdrop.overlay');
+//    background: cv('bg.backdrop.overlay');
     pointer-events: none;
   }
 }
